@@ -14,6 +14,8 @@
     --my-dark-grey: #f0f0f0;
     --my-green: #86c9b8;
     --font-main-color: #4f4f4f;
+    --font-secundary-color: #858585;
+    --font-title-color: #323232;
 }
 
 body {
@@ -28,8 +30,22 @@ p {
     color: var(--font-main-color);
 }
 
+h1 {
+    color: var(--font-title-color);
+}
+
 h3 {
+    color: var(--font-title-color);
     font-size: 1rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.icon-rounded {
+    background-color: black;
+    border-radius: 50%;
 }
 
 header {
@@ -129,6 +145,7 @@ section:nth-child(2n) {
 
 .home__title {
     /* border: 1px solid red; */
+    color: white;
 }
 
 .home__text {
@@ -175,10 +192,6 @@ section:nth-child(2n) {
     margin-top: 14px;
 }
 
-.services__descriptor--icon {
-    font-size: 1.5rem;
-}
-
 .services__descriptor h3 {
     margin: 0px;
     align-self: center;
@@ -218,8 +231,32 @@ section:nth-child(2n) {
     margin-bottom: 4px;
 }
 
+.portafolio__images {
+    display: grid;
+    gap: 15px;
+}
+
 .portafolio__images img {
     width: 100%;
+}
+
+#blog {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#blog>div {
+    padding: 52px 10px 60px;
+}
+
+#blog>div:nth-child(2n) {
+    background-color: var(--my-grey);
+    /* border: 1px solid red; */
+}
+
+.our-blog__entries {
+    display: grid;
+    gap: 15px;
 }
 
 .our-blog__entry {
@@ -228,10 +265,113 @@ section:nth-child(2n) {
     padding: 30px 47px;
 }
 
+.our-blog__entry p:nth-child(1) {
+    color: var(--font-secundary-color);
+    margin-bottom: 0;
+}
+
 .our-blog__entry h3 {
+    color: var(--font-main-color);
     margin-bottom: 0;
 }
 
 .our-blog__entry p {
     margin-top: 6px;
+    font-weight: bold;
+}
+
+.questions {
+    display: grid;
+    gap: 10px;
+}
+
+.question {
+    background: white;
+    padding: 20px 23px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 5px rgb(240, 240, 240);
+}
+
+.question__title--icon {
+    margin-right: 15px;
+}
+
+.question h3 {
+    margin: 0;
+}
+
+.testimonial {
+    display: flex;
+    height: 225px;
+}
+
+.testimonial__img {
+    width: 62px;
+}
+
+.testimonial__img img {
+    width: 100%;
+}
+
+.testimonial__text {
+    width: 80%;
+    padding-left: 18px;
+}
+
+.testimonials__buttons {
+    text-align: center;
+}
+
+.contact__form {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.contact__form--input {
+    padding: 8px;
+    font-size: 0.65rem;
+}
+
+.contact__form--input, .contact__form--button {
+    width: 100%;
+    height: 34px;
+    border: 1px solid var(--my-dark-grey);
+    border-radius: 2px;
+}
+
+.contact__form textarea {
+    max-width: 270px;
+    min-width: 100%;
+    height: 128px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.contact__form--button {
+    color: white;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    border-color: transparent;
+    border-radius: 2px;
+    background-color: var(--my-green);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    order: 3;
+    padding: 32px 10px 46px;
+}
+
+.social-media__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.social-media__icon {
+    height: 24px;
 }

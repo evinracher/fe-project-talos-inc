@@ -7,9 +7,10 @@
     <title>TALOS INC</title>
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="main.css">
+</head>
 
 <body>
-    </head>
+
     <header>
         <div>
             <h3 class="header__title">Talos</h3>
@@ -32,16 +33,16 @@
             <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
         </div>
         <div class="services__descriptor">
-            <div class="services__descriptor--icon" aria-hidden="true" data-icon="&#xe001;"></div>
+            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe001;"></div>
             <h3>
                 Brand Identity
             </h3>
             <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
                 vulputate
-                voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
+                voluptate neque, curabitur dolor libero sodales vitae elit massa.</p>
         </div>
         <div class="services__descriptor">
-            <div class="services__descriptor--icon" aria-hidden="true" data-icon="&#xe01b;"></div>
+            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe01b;"></div>
             <h3>
                 Web Design
             </h3>
@@ -50,7 +51,7 @@
                 voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
         </div>
         <div class="services__descriptor">
-            <div class="services__descriptor--icon" aria-hidden="true" data-icon="&#xe04b;"></div>
+            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe04b;"></div>
             <h3>
                 Social Marketing
             </h3>
@@ -59,7 +60,7 @@
                 voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
         </div>
         <div class="services__descriptor">
-            <div class="services__descriptor--icon" aria-hidden="true" data-icon="&#xe027;"></div>
+            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe027;"></div>
             <h3>
                 CMS &amp; eCommerce
             </h3>
@@ -140,25 +141,27 @@
                     Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
                 </p>
             </div>
-            <div class="our-blog__entry">
-                <p>Online Business / Dec 9, 2016</p>
-                <h3>The best way to make Online Business</h3>
-                <p><strong>by Johnathan Doe</strong></p>
-            </div>
-            <div class="our-blog__entry">
-                <p>Frontend Dev / Dec 9, 2016</p>
-                <h3>Frontend Developer Vs UI Designer</h3>
-                <p><strong>by Johnny James</strong></p>
-            </div>
-            <div class="our-blog__entry">
-                <p>Social Marketing / Dec 9, 2016</p>
-                <h3>What is Social Marketing Business</h3>
-                <p><strong>by Mary Louis</strong></p>
-            </div>
-            <div class="our-blog__entry">
-                <p>Web Design / Dec 9, 2016</p>
-                <h3>How to become Web Designer</h3>
-                <p><strong>by David Jenn</strong></p>
+            <div class="our-blog__entries">
+                <div class="our-blog__entry">
+                    <p>Online Business / Dec 9, 2016</p>
+                    <h3>The best way to make Online Business</h3>
+                    <p><strong>by Johnathan Doe</strong></p>
+                </div>
+                <div class="our-blog__entry">
+                    <p>Frontend Dev / Dec 9, 2016</p>
+                    <h3>Frontend Developer Vs UI Designer</h3>
+                    <p><strong>by Johnny James</strong></p>
+                </div>
+                <div class="our-blog__entry">
+                    <p>Social Marketing / Dec 9, 2016</p>
+                    <h3>What is Social Marketing Business</h3>
+                    <p><strong>by Mary Louis</strong></p>
+                </div>
+                <div class="our-blog__entry">
+                    <p>Web Design / Dec 9, 2016</p>
+                    <h3>How to become Web Designer</h3>
+                    <p><strong>by David Jenn</strong></p>
+                </div>
             </div>
         </div>
         <div class="blog__asked-questions">
@@ -167,8 +170,34 @@
                 <p>
                     Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
                 </p>
-                <div class="questions">
-                    <div class="question"></div>
+            </div>
+            <div class="questions">
+                <div class="question">
+                    <h3>
+                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe001;"></span>
+                        How to make Brand Identity?
+                    </h3>
+                    <div class="question__answer">
+                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+                            vulputate
+                            voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
+                            amet,
+                            maecenas eget vestibulum justo imperdiet.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>
+                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe01b;"></span>
+                        What is Web Design?
+                    </h3>
+                </div>
+                <div class="question">
+                    <h3>
+                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe04b;"></span>
+                        Why Important Social Marketing?
+                    </h3>
                 </div>
             </div>
         </div>
@@ -179,16 +208,67 @@
                     Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
                 </p>
             </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./resources/testimonial-img1.jpg">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus
+                            augue
+                            vulputate
+                            voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit
+                            amet
+                        </p>
+                        <h3>Johnathan Doe</h3>
+                    </div>
+                </div>
+                <div class="testimonials__buttons">
+                    <div class="rounded-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--our-blog-->
-        <!--questions-->
-        <!--testimonial-->
     </section>
     <section id="contact">
-
+        <div class="section__info">
+            <h1>Get in touch</h1>
+            <p>
+                Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
+            </p>
+        </div>
+        <form action="index.html" class="contact__form">
+            <input class="contact__form--input" type="text" id="name" required placeholder="Name">
+            <input class="contact__form--input" type="email" id="email" required placeholder="Email">
+            <input class="contact__form--input" type="number" id="phone-number" required placeholder="Phone">
+            <textarea class="contact__form--input" type="text-area" id="message" required
+                placeholder="Message"></textarea>
+            <button class="contact__form--button" type="submit">Shoot Message</button>
+        </form>
     </section>
-
     <footer>
+        <p>Copyright © Talos HTML Template | All Rights Reserved.</p>
+        <div class="footer__social-media">
+            <a class="social-media__link" href="https://www.facebook.com/">
+                <img class="social-media__icon" src="./resources/footer-icons/facebook-with-circle.svg"
+                    aria-hidden="true"></a>
+            <a class="social-media__link" href="https://twitter.com/"><img class="social-media__icon"
+                    src="./resources/footer-icons/twitter-with-circle.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://dribbble.com/"><img class="social-media__icon"
+                    src="./resources/footer-icons/dribbble-with-circle.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://www.behance.net/"><img class="social-media__icon  icon-rounded"
+                    src="./resources/footer-icons/behance.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://github.com/"><img class="social-media__icon"
+                    src="./resources/footer-icons/github.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://myaccount.google.com/profile"><img class="social-media__icon"
+                    src="./resources/footer-icons/google-plus3.svg" aria-hidden="true"></a>
+        </div>
     </footer>
 </body>
 

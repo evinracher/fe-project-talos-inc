@@ -10,3 +10,16 @@
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
 }
+
+.rounded-buttons {
+    display: inline-block;
+}
+
+.rounded-buttons span {
+    background: rgb(187, 225, 215);
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 4px;
+}
