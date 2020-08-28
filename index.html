@@ -5,86 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TALOS INC</title>
-    <link rel="stylesheet" href="utils.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
 
     <header>
-        <div>
+        <div class="main-header">
             <h3 class="header__title">Talos</h3>
-            <button class="toggle-button">
+            <button class="toggle-button mobile-button">
                 <span class="toggle-button__bar"></span>
                 <span class="toggle-button__bar"></span>
                 <span class="toggle-button__bar"></span>
             </button>
+            <nav class="main-nav">
+                <ul class="main-nav__items nav__items">
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#home">home</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#services">services</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#about">about</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#team">team</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#portafolio">portafolio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#blog">blog</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="nav__link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        <nav class="mobile-nav close">
+            <ul class="mobile-nav__items nav__items">
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#home">home</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#services">services</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#about">about</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#team">team</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#portafolio">portafolio</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#blog">blog</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="nav__link" href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section id="home">
         <h1 class="home__title">Genius Web &amp; Talos Inc.</h1>
-        <p class="home__text">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus
-            augue vulputate voluptate neque, curabitur dolor libero sodales.</p>
-        <a class="home__cta" href="#services">Learn more</a>
+        <p class="home__text">Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales.</p>
+        <div class="home__btns">
+            <a class="home__learn-more-btn home__btn" href="#services">Learn more</a>
+            <a class="home__contact-btn home__btn" href="#contact" hidden="true">contact us</a>
+        </div>
     </section>
     <section id="services">
         <div class="services__summary">
             <h1>What we do</h1>
             <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet</p>
         </div>
-        <div class="services__descriptor">
-            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe001;"></div>
-            <h3>
-                Brand Identity
-            </h3>
-            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-                vulputate
-                voluptate neque, curabitur dolor libero sodales vitae elit massa.</p>
+        <div class="services__descriptors">
+            <div class="services__descriptor">
+                <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe001;"></div>
+                <h3>
+                    Brand Identity
+                </h3>
+                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.</p>
+            </div>
+            <div class="services__descriptor">
+                <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe01b;"></div>
+                <h3>
+                    Web Design
+                </h3>
+                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
+            </div>
+            <div class="services__descriptor">
+                <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe04b;"></div>
+                <h3>
+                    Social Marketing
+                </h3>
+                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
+            </div>
+            <div class="services__descriptor">
+                <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe027;"></div>
+                <h3>
+                    CMS &amp; eCommerce
+                </h3>
+                <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
+            </div>
         </div>
-        <div class="services__descriptor">
-            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe01b;"></div>
-            <h3>
-                Web Design
-            </h3>
-            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-                vulputate
-                voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
-        </div>
-        <div class="services__descriptor">
-            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe04b;"></div>
-            <h3>
-                Social Marketing
-            </h3>
-            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-                vulputate
-                voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
-        </div>
-        <div class="services__descriptor">
-            <div class="services__descriptor--icon icon" aria-hidden="true" data-icon="&#xe027;"></div>
-            <h3>
-                CMS &amp; eCommerce
-            </h3>
-            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus
-                augue
-                vulputate
-                voluptate neque, curabitur dolor libero sodales vitae elit massa. </p>
-        </div>
-
     </section>
     <section id="about">
         <h1>Genius Studio</h1>
         <p>
-            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate
-            voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget
-            vestibulum justo imperdiet, wisi risus purus augue vulputate
-            voluptate neque, curabitur dolor libero sodales vitae elit massa.
+            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus
+            augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
         </p>
         <p>
-            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate
-            voluptate neque, curabitur dolor libero sodales vitae elit massa.
+            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
         </p>
-        <iframe class="about__video" src="https://www.youtube.com/embed/2ZKV6B03I0s" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="about__video">
+            <iframe src="https://www.youtube.com/embed/2ZKV6B03I0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
     <section id="team">
         <div class="section__info">
@@ -93,29 +135,29 @@
                 Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.
             </p>
         </div>
-        <ul class="team__members">
-            <li class="team__member">
+        <div class="team__members">
+            <div class="team__member">
                 <img class="team__member--img" src="resources/team_1.jpg">
                 <h3>
                     Johnathan Doe
                 </h3>
                 <p>Designer</p>
-            </li>
-            <li class="team__member">
+            </div>
+            <div class="team__member">
                 <img class="team__member--img" src="resources/team_2.jpg">
                 <h3>
                     Jenny L Martian
                 </h3>
                 <p>UX Designer</p>
-            </li>
-            <li class="team__member">
+            </div>
+            <div class="team__member">
                 <img class="team__member--img" src="resources/team_3.jpg">
                 <h3>
                     James David Doe
                 </h3>
                 <p>Creative Director</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
     <section id="portafolio">
         <div class="section__info">
@@ -142,22 +184,22 @@
                 </p>
             </div>
             <div class="our-blog__entries">
-                <div class="our-blog__entry">
+                <div class="our-blog__entry el1">
                     <p>Online Business / Dec 9, 2016</p>
                     <h3>The best way to make Online Business</h3>
                     <p><strong>by Johnathan Doe</strong></p>
                 </div>
-                <div class="our-blog__entry">
+                <div class="our-blog__entry el2">
                     <p>Frontend Dev / Dec 9, 2016</p>
                     <h3>Frontend Developer Vs UI Designer</h3>
                     <p><strong>by Johnny James</strong></p>
                 </div>
-                <div class="our-blog__entry">
+                <div class="our-blog__entry el3">
                     <p>Social Marketing / Dec 9, 2016</p>
                     <h3>What is Social Marketing Business</h3>
                     <p><strong>by Mary Louis</strong></p>
                 </div>
-                <div class="our-blog__entry">
+                <div class="our-blog__entry el4">
                     <p>Web Design / Dec 9, 2016</p>
                     <h3>How to become Web Designer</h3>
                     <p><strong>by David Jenn</strong></p>
@@ -174,29 +216,23 @@
             <div class="questions">
                 <div class="question">
                     <h3>
-                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe001;"></span>
-                        How to make Brand Identity?
+                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe001;"></span> How to make Brand Identity?
                     </h3>
                     <div class="question__answer">
-                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit
-                            amet,
-                            maecenas eget vestibulum justo imperdiet.
+                        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+                            imperdiet.
                         </p>
                         <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
                     </div>
                 </div>
                 <div class="question">
                     <h3>
-                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe01b;"></span>
-                        What is Web Design?
+                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe01b;"></span> What is Web Design?
                     </h3>
                 </div>
                 <div class="question">
                     <h3>
-                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe04b;"></span>
-                        Why Important Social Marketing?
+                        <span class="question__title--icon icon" aria-hidden="true" data-icon="&#xe04b;"></span> Why Important Social Marketing?
                     </h3>
                 </div>
             </div>
@@ -209,29 +245,82 @@
                 </p>
             </div>
             <div class="testimonials">
+                <div class="testimonial testimonial__current">
+                    <div class="testimonial__img">
+                        <img src="./resources/testimonial-img1.jpg">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet
+                        </p>
+                        <h3>Johnathan Doe</h3>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./resources/testimonial-img2.jpg">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+                            imperdiet.
+                        </p>
+                        <h3>Elizabeth Jones</h3>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./resources/testimonial-img3.jpg">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo
+                            imperdiet.
+                        </p>
+                        <h3>James Author</h3>
+                    </div>
+                </div>
                 <div class="testimonial">
                     <div class="testimonial__img">
                         <img src="./resources/testimonial-img1.jpg">
                     </div>
                     <div class="testimonial__text">
                         <p>
-                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus
-                            augue
-                            vulputate
-                            voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit
-                            amet
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet
                         </p>
-                        <h3>Johnathan Doe</h3>
+                        <h3>Thomas Davis</h3>
                     </div>
                 </div>
-                <div class="testimonials__buttons">
-                    <div class="rounded-buttons">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./resources/testimonial-img2.jpg">
                     </div>
+                    <div class="testimonial__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet
+                        </p>
+                        <h3>Jennifer Moore</h3>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="./resources/testimonial-img3.jpg">
+                    </div>
+                    <div class="testimonial__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.Lorem ipsum dolor sit amet
+                        </p>
+                        <h3>Richard Clark</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__buttons">
+                <div class="rounded-buttons">
+                    <span class="rounded-button rounded-button--active"></span>
+                    <span class="rounded-button"></span>
+                    <span class="rounded-button"></span>
+                    <span class="rounded-button"></span>
+                    <span class="rounded-button"></span>
                 </div>
             </div>
         </div>
@@ -247,8 +336,7 @@
             <input class="contact__form--input" type="text" id="name" required placeholder="Name">
             <input class="contact__form--input" type="email" id="email" required placeholder="Email">
             <input class="contact__form--input" type="number" id="phone-number" required placeholder="Phone">
-            <textarea class="contact__form--input" type="text-area" id="message" required
-                placeholder="Message"></textarea>
+            <textarea class="contact__form--input" type="text-area" id="message" required placeholder="Message"></textarea>
             <button class="contact__form--button" type="submit">Shoot Message</button>
         </form>
     </section>
@@ -256,20 +344,15 @@
         <p>Copyright © Talos HTML Template | All Rights Reserved.</p>
         <div class="footer__social-media">
             <a class="social-media__link" href="https://www.facebook.com/">
-                <img class="social-media__icon" src="./resources/footer-icons/facebook-with-circle.svg"
-                    aria-hidden="true"></a>
-            <a class="social-media__link" href="https://twitter.com/"><img class="social-media__icon"
-                    src="./resources/footer-icons/twitter-with-circle.svg" aria-hidden="true"></a>
-            <a class="social-media__link" href="https://dribbble.com/"><img class="social-media__icon"
-                    src="./resources/footer-icons/dribbble-with-circle.svg" aria-hidden="true"></a>
-            <a class="social-media__link" href="https://www.behance.net/"><img class="social-media__icon  icon-rounded"
-                    src="./resources/footer-icons/behance.svg" aria-hidden="true"></a>
-            <a class="social-media__link" href="https://github.com/"><img class="social-media__icon"
-                    src="./resources/footer-icons/github.svg" aria-hidden="true"></a>
-            <a class="social-media__link" href="https://myaccount.google.com/profile"><img class="social-media__icon"
-                    src="./resources/footer-icons/google-plus3.svg" aria-hidden="true"></a>
+                <img class="social-media__icon" src="./resources/footer-icons/facebook-with-circle.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://twitter.com/"><img class="social-media__icon" src="./resources/footer-icons/twitter-with-circle.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://dribbble.com/"><img class="social-media__icon" src="./resources/footer-icons/dribbble-with-circle.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://www.behance.net/"><img class="social-media__icon  icon-rounded" src="./resources/footer-icons/behance.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://github.com/"><img class="social-media__icon" src="./resources/footer-icons/github.svg" aria-hidden="true"></a>
+            <a class="social-media__link" href="https://myaccount.google.com/profile"><img class="social-media__icon" src="./resources/footer-icons/google-plus3.svg" aria-hidden="true"></a>
         </div>
     </footer>
+    <script src="./scripts/main.js" type="module"></script>
 </body>
 
 </html>

@@ -15,11 +15,19 @@
     display: inline-block;
 }
 
-.rounded-buttons span {
+.rounded-button {
     background: rgb(187, 225, 215);
     width: 9px;
     height: 9px;
     display: inline-block;
     border-radius: 50%;
     margin: 0 4px;
+}
+
+.rounded-button--active {
+    background: rgb(124, 195, 175);
+}
+
+.close {
+    display: none;
 }
