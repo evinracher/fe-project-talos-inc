@@ -1,7 +1,35 @@
-import { handleMobileBtnClick } from "./handlers.js";
-import { mobileBtn, mobileNav } from "./elements.js";
+import * as handlers from './handlers.js';
+import * as elements from './elements.js';
+import { loadQuestions } from './utils.js';
 
-console.log(mobileBtn);
-console.dir(mobileNav);
 // Adding event
-mobileBtn.addEventListener("click", handleMobileBtnClick);
+elements.mobileBtn.addEventListener('click', handlers.handleMobileBtnClick);
+
+elements.teamMembers.forEach(teamMember => {
+  teamMember.addEventListener('mouseenter', handlers.handleTeamMemberEnter);
+  teamMember.addEventListener('mouseleave', handlers.handleTeamMemberOut);
+  //   teamMember.addEventListener('mousemove', handlers.handleTeamMemberMove);
+});
+
+elements.portafolioImages.forEach(portafolioImage => {
+  portafolioImage.addEventListener(
+    'mouseenter',
+    handlers.handlePortafolioImageEnter
+  );
+  portafolioImage.addEventListener(
+    'mouseleave',
+    handlers.handlePortafolioImageOut
+  );
+});
+
+elements.questions.forEach(question => {
+  question.addEventListener('click', handlers.handleQuestionClick);
+});
+
+window.addEventListener('resize', () => {
+  loadQuestions(elements);
+});
+
+window.addEventListener('load', () => {
+  loadQuestions(elements);
+});
