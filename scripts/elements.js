@@ -6,3 +6,7 @@ export const portafolioImages = document.querySelectorAll('.portafolio__image');
 export const questions = document.querySelectorAll('.question');
 export const questionsAnswers = document.querySelectorAll('.question__answer');
 export const questionSection = document.querySelector('.questions');
+export const testimonialButtons = document.querySelectorAll(
+  '.testimonials__buttons span'
+);
+export const testimonials = document.querySelectorAll('.testimonial');

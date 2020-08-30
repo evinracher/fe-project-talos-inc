@@ -294,7 +294,7 @@ section:nth-child(2n) {
     justify-content: center;
     position: absolute;
     z-index: 1;
-    bottom: 20%;
+    bottom: 16.5%;
     height: 20%;
     width: 100%;
     visibility: hidden;
@@ -435,15 +435,22 @@ section:nth-child(2n) {
 }
 
 .testimonials {
+    position: relative;
     display: flex;
 }
 
 .testimonial {
-    display: none;
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s;
 }
 
 .testimonial__current {
-    display: flex;
+    position: static;
+    visibility: visible;
+    opacity: 1;
 }
 
 .testimonial__img {
@@ -613,7 +620,7 @@ footer {
     .testimonial {
         width: 48%;
     }
-    .rounded-buttons span:nth-child(n+4) {
+    .rounded-button-mobile {
         display: none;
     }
     .contact__form {

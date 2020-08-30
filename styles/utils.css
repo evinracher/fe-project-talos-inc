@@ -13,6 +13,12 @@
     margin: 0 4px;
 }
 
+@media (min-width: 577px) {
+    .rounded-button-mobile {
+        display: none;
+    }
+}
+
 .rounded-button--active {
     background: rgb(124, 195, 175);
 }

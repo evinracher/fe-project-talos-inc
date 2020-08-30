@@ -1,5 +1,9 @@
 import * as elements from './elements.js';
-import { getQuestionHeight, getTotalHeight } from './utils.js';
+import {
+  getQuestionHeight,
+  getTotalHeight,
+  getTotalOfButtonsAndRemoveActiveClass,
+} from './utils.js';
 
 export function handleMobileBtnClick() {
   elements.mobileNav.classList.toggle('close');
@@ -46,4 +50,31 @@ export function handleQuestionClick(e) {
       otherQuestion.style.maxHeight = `${otherQuestionHeight}px`;
     }
   });
+}
+
+export function handleTestimonialButtonClick(e) {
+  const buttonsCount = getTotalOfButtonsAndRemoveActiveClass(
+    elements.testimonialButtons
+  );
+  e.currentTarget.classList.add('rounded-button--active');
+  const buttonId = e.currentTarget.getAttribute('id');
+  const index = parseInt(buttonId.charAt(buttonId.length - 1));
+  const testimonialsCount = elements.testimonials.length;
+  elements.testimonials.forEach(testimonial => {
+    testimonial.classList.remove('testimonial__current');
+  });
+  if (buttonsCount === testimonialsCount) {
+    const activeTestimonial = elements.testimonials.item(index - 1);
+    activeTestimonial.classList.add('testimonial__current');
+  } else if (buttonsCount === 3) {
+    const activeTestimonials = document.querySelectorAll(
+      `.for-button-${index}`
+    );
+    activeTestimonials.forEach(testimonial => {
+      testimonial.classList.add('testimonial__current');
+    });
+    if (activeTestimonials.length === 1) {
+      activeTestimonials.item(0).style.width = '100%';
+    }
+  }
 }

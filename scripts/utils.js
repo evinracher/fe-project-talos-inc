@@ -33,3 +33,55 @@ export function loadQuestions(elements) {
     }
   });
 }
+
+export function getTotalOfButtonsAndRemoveActiveClass(buttons) {
+  let buttonsCount = 0;
+  buttons.forEach(button => {
+    button.classList.remove('rounded-button--active');
+    if (getComputedStyle(button).display !== 'none') {
+      buttonsCount += 1;
+    }
+  });
+
+  return buttonsCount;
+}
+
+export function loadTestimonials(elements) {
+  const activeButton = document.querySelector('.rounded-button--active');
+  const buttonsCount = getTotalOfButtonsAndRemoveActiveClass(
+    elements.testimonialButtons
+  );
+  const testimonialsCount = elements.testimonials.length;
+  const activeTestimonial = document.querySelector('.testimonial__current');
+  const activeTestimonialIndex = Array.from(elements.testimonials).indexOf(
+    activeTestimonial
+  );
+  console.log({ activeTestimonialIndex });
+  if (buttonsCount === testimonialsCount) {
+    elements.testimonials.forEach(testimonial => {
+      testimonial.classList.remove('testimonial__current');
+    });
+    const activeRealButton = elements.testimonialButtons.item(
+      activeTestimonialIndex
+    );
+    activeRealButton.classList.add('rounded-button--active');
+    activeTestimonial.classList.add('testimonial__current');
+    console.log(activeRealButton);
+  } else if (buttonsCount === 3) {
+    const id = activeTestimonial.classList.item(1);
+    const index = parseInt(id.charAt(id.length - 1));
+    console.log(index);
+    const activeTestimonials = document.querySelectorAll(
+      `.for-button-${index}`
+    );
+    activeTestimonials.forEach(testimonial => {
+      testimonial.classList.add('testimonial__current');
+    });
+    if (activeTestimonials.length === 1) {
+      activeTestimonials.item(0).style.width = '100%';
+    }
+    const activeRealButton = document.getElementById(`rounded-button-${index}`);
+    activeRealButton.classList.add('rounded-button--active');
+    console.log(activeRealButton);
+  }
+}

@@ -1,6 +1,6 @@
 import * as handlers from './handlers.js';
 import * as elements from './elements.js';
-import { loadQuestions } from './utils.js';
+import { loadQuestions, loadTestimonials } from './utils.js';
 
 // Adding event
 elements.mobileBtn.addEventListener('click', handlers.handleMobileBtnClick);
@@ -26,10 +26,22 @@ elements.questions.forEach(question => {
   question.addEventListener('click', handlers.handleQuestionClick);
 });
 
+elements.testimonialButtons.forEach(button => {
+  button.addEventListener('click', handlers.handleTestimonialButtonClick);
+});
+
 window.addEventListener('resize', () => {
   loadQuestions(elements);
 });
 
 window.addEventListener('load', () => {
   loadQuestions(elements);
+});
+
+window.addEventListener('resize', () => {
+  loadTestimonials(elements);
+});
+
+window.addEventListener('load', () => {
+  loadTestimonials(elements);
 });
