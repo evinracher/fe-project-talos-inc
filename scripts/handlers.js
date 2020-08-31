@@ -9,28 +9,33 @@ export function handleMobileBtnClick() {
   elements.mobileNav.classList.toggle('close');
 }
 
-export function handleTeamMemberEnter(e) {
-  const links = e.currentTarget.querySelector('.team__member--links');
+export function handleTeamMemberEnter(event) {
+  console.log(event.currentTarget);
+  const links = event.currentTarget.querySelector('.team-member__links');
   links.classList.add('active-element');
 }
 
-export function handleTeamMemberOut(e) {
-  const links = e.currentTarget.querySelector('.team__member--links');
+export function handleTeamMemberOut(event) {
+  const links = event.currentTarget.querySelector('.team-member__links');
   links.classList.remove('active-element');
 }
 
-export function handlePortafolioImageEnter(e) {
-  const imageInfo = e.currentTarget.querySelector('.portafolio__image--info');
+export function handlePortafolioImageEnter(event) {
+  const imageInfo = event.currentTarget.querySelector(
+    '.portafolio__image--info'
+  );
   imageInfo.classList.add('active-element');
 }
 
-export function handlePortafolioImageOut(e) {
-  const imageInfo = e.currentTarget.querySelector('.portafolio__image--info');
+export function handlePortafolioImageOut(event) {
+  const imageInfo = event.currentTarget.querySelector(
+    '.portafolio__image--info'
+  );
   imageInfo.classList.remove('active-element');
 }
 
-export function handleQuestionClick(e) {
-  const clickedQuestion = e.currentTarget;
+export function handleQuestionClick(event) {
+  const clickedQuestion = event.currentTarget;
   const clickedAnswer = clickedQuestion.querySelector('.question__answer');
   const clickedAnswerHeight = getTotalHeight(clickedAnswer);
   if (clickedAnswer.classList.contains('open-answer')) {
@@ -52,12 +57,12 @@ export function handleQuestionClick(e) {
   });
 }
 
-export function handleTestimonialButtonClick(e) {
+export function handleTestimonialButtonClick(event) {
   const buttonsCount = getTotalOfButtonsAndRemoveActiveClass(
     elements.testimonialButtons
   );
-  e.currentTarget.classList.add('rounded-button--active');
-  const buttonId = e.currentTarget.getAttribute('id');
+  event.currentTarget.classList.add('rounded-button--active');
+  const buttonId = event.currentTarget.getAttribute('id');
   const index = parseInt(buttonId.charAt(buttonId.length - 1));
   const testimonialsCount = elements.testimonials.length;
   elements.testimonials.forEach(testimonial => {

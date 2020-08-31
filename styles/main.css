@@ -108,9 +108,7 @@ header {
     font-size: 0.6rem;
 }
 
-.nav__link:hover,
-.nav__link:active,
-.nav__link--active {
+.nav__link:hover, .nav__link:active, .nav__link--active {
     color: var(--my-green);
 }
 
@@ -176,15 +174,13 @@ section:nth-child(2n) {
 }
 
 @keyframes change-image {
-    0,
-    40% {
+    0, 40% {
         background: url("../resources/home-bg-2.jpg");
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
-    60%,
-    100% {
+    60%, 100% {
         background: url("../resources/home-bg.jpg");
         background-size: cover;
         background-position: 50% 50%;
@@ -231,8 +227,7 @@ section:nth-child(2n) {
     border-color: rgb(228, 164, 67);
 }
 
-.home__button:hover,
-.home__button:active {
+.home__button:hover, .home__button:active {
     background-color: white;
     border-color: white;
     color: var(--my-green);
@@ -284,23 +279,27 @@ section:nth-child(2n) {
     padding: 0;
 }
 
-.team__member {
+.team-member {
     position: relative;
     margin-bottom: 42px;
 }
 
-.team__member--img {
+.team-member__info {
+    position: relative;
+}
+
+.team-member__img {
     width: 100%;
 }
 
-.team__member--links {
+.team-member__links {
     background-color: rgb(250, 250, 250);
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 1;
-    bottom: 16.5%;
+    bottom: 0;
     height: 20%;
     width: 100%;
     visibility: hidden;
@@ -308,12 +307,12 @@ section:nth-child(2n) {
     transition: visibility 0s, opacity 1s ease-out;
 }
 
-.team__member p {
+.team-member__role {
     font-weight: bold;
     margin: 0;
 }
 
-.team__member h3 {
+.team-member__name {
     margin-bottom: 4px;
 }
 
@@ -348,8 +347,7 @@ section:nth-child(2n) {
     transition: visibility 0s, opacity 1s ease-out;
 }
 
-.portafolio__image--info h3,
-.portafolio__image--info p {
+.portafolio__image--info h3, .portafolio__image--info p {
     color: white;
 }
 
@@ -493,8 +491,7 @@ section:nth-child(2n) {
     background-color: var(--my-grey);
 }
 
-.contact__form--input,
-.contact__form--button {
+.contact__form--input, .contact__form--button {
     width: 100%;
     height: 34px;
     border: 1px solid var(--my-dark-grey);
@@ -520,8 +517,7 @@ section:nth-child(2n) {
     transition: background-color 1s;
 }
 
-.contact__form--button:hover,
-.contact__form--button:active {
+.contact__form--button:hover, .contact__form--button:active {
     background-color: white;
     color: var(--my-green);
 }
@@ -538,7 +534,6 @@ footer {
     font-size: 1.4rem;
     margin: 0 3px;
 }
-
 
 /* TABLET STYLE */
 
@@ -571,8 +566,7 @@ footer {
         line-height: 58px;
         text-align: center;
     }
-    section,
-    #blog>div {
+    section, #blog>div {
         padding: 83px 94px 90px;
     }
     #home {
@@ -611,16 +605,13 @@ footer {
         height: 252px;
         text-align: center;
     }
-    .team-members,
-    .portafolio__images,
-    .our-blog__entries {
+    .team-members, .portafolio__images, .our-blog__entries {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .team__member,
-    .portafolio__image {
+    .team-member, .portafolio__image {
         width: 48%;
     }
     .our-blog__entries div {
@@ -666,7 +657,6 @@ footer {
     }
 }
 
-
 /* DESKTOP STYLE */
 
 @media(min-width: 769px) {
@@ -682,15 +672,13 @@ footer {
     .icon {
         font-size: 2rem;
     }
-    section,
-    #blog>div {
+    section, #blog>div {
         padding: 122px 10% 130px;
     }
     .header__title {
         font-size: 1.6rem;
     }
-    .section__title,
-    .home__title {
+    .section__title, .home__title {
         font-size: 2.2rem;
     }
     .main-nav {
@@ -731,8 +719,7 @@ footer {
         display: flex;
         gap: 20px;
     }
-    .team__member,
-    .portafolio__image {
+    .team-member, .portafolio__image {
         width: 31.5%;
     }
     .portafolio__image--icon {
@@ -746,8 +733,7 @@ footer {
         font-size: 0.8rem;
         background-color: var(--my-grey);
     }
-    .contact__form--input,
-    .contact__form--button {
+    .contact__form--input, .contact__form--button {
         height: 43px;
     }
     .contact__form--button {
