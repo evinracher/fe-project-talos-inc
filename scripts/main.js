@@ -2,13 +2,12 @@ import * as handlers from './handlers.js';
 import * as elements from './elements.js';
 import { loadQuestions, loadTestimonials } from './utils.js';
 
-// Adding event
+// Adding events
 elements.mobileBtn.addEventListener('click', handlers.handleMobileBtnClick);
 
 elements.teamMembers.forEach(teamMember => {
   teamMember.addEventListener('mouseenter', handlers.handleTeamMemberEnter);
   teamMember.addEventListener('mouseleave', handlers.handleTeamMemberOut);
-  //   teamMember.addEventListener('mousemove', handlers.handleTeamMemberMove);
 });
 
 elements.portafolioImages.forEach(portafolioImage => {

@@ -7,8 +7,6 @@
     font-style: normal;
 }
 
-/* Maybe better with root */
-
 * {
     box-sizing: border-box;
     font-family: "et-line", "Oxygen", sans-serif;
@@ -438,6 +436,7 @@ section:nth-child(2n) {
 .testimonials {
     position: relative;
     display: flex;
+    min-height: 240px;
 }
 
 .testimonial {
@@ -617,6 +616,7 @@ footer {
     }
     .testimonials {
         justify-content: space-between;
+        min-height: 260px;
     }
     .testimonial {
         width: 48%;
