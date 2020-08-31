@@ -38,7 +38,7 @@
 
 /* etline icons */
 
-[data-icon]:before {
+.icon:before {
     font-family: 'et-line';
     content: attr(data-icon);
     speak: none;
@@ -62,7 +62,7 @@
     font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+.social-media-icon, .icon-link {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;

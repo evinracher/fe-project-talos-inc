@@ -51,19 +51,19 @@ export function loadTestimonials(elements) {
     elements.testimonialButtons
   );
   const testimonialsCount = elements.testimonials.length;
-  const activeTestimonial = document.querySelector('.testimonial__current');
+  const activeTestimonial = document.querySelector('.testimonial--current');
   const activeTestimonialIndex = Array.from(elements.testimonials).indexOf(
     activeTestimonial
   );
   if (buttonsCount === testimonialsCount) {
     elements.testimonials.forEach(testimonial => {
-      testimonial.classList.remove('testimonial__current');
+      testimonial.classList.remove('testimonial--current');
     });
     const activeRealButton = elements.testimonialButtons.item(
       activeTestimonialIndex
     );
     activeRealButton.classList.add('rounded-button--active');
-    activeTestimonial.classList.add('testimonial__current');
+    activeTestimonial.classList.add('testimonial--current');
   } else if (buttonsCount === 3) {
     const id = activeTestimonial.classList.item(1);
     const index = parseInt(id.charAt(id.length - 1));
@@ -71,7 +71,7 @@ export function loadTestimonials(elements) {
       `.for-button-${index}`
     );
     activeTestimonials.forEach(testimonial => {
-      testimonial.classList.add('testimonial__current');
+      testimonial.classList.add('testimonial--current');
     });
     if (activeTestimonials.length === 1) {
       activeTestimonials.item(0).style.width = '100%';

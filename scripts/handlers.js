@@ -21,16 +21,12 @@ export function handleTeamMemberOut(event) {
 }
 
 export function handlePortafolioImageEnter(event) {
-  const imageInfo = event.currentTarget.querySelector(
-    '.portafolio__image--info'
-  );
+  const imageInfo = event.currentTarget.querySelector('.portafolio__info');
   imageInfo.classList.add('active-element');
 }
 
 export function handlePortafolioImageOut(event) {
-  const imageInfo = event.currentTarget.querySelector(
-    '.portafolio__image--info'
-  );
+  const imageInfo = event.currentTarget.querySelector('.portafolio__info');
   imageInfo.classList.remove('active-element');
 }
 
@@ -66,17 +62,17 @@ export function handleTestimonialButtonClick(event) {
   const index = parseInt(buttonId.charAt(buttonId.length - 1));
   const testimonialsCount = elements.testimonials.length;
   elements.testimonials.forEach(testimonial => {
-    testimonial.classList.remove('testimonial__current');
+    testimonial.classList.remove('testimonial--current');
   });
   if (buttonsCount === testimonialsCount) {
     const activeTestimonial = elements.testimonials.item(index - 1);
-    activeTestimonial.classList.add('testimonial__current');
+    activeTestimonial.classList.add('testimonial--current');
   } else if (buttonsCount === 3) {
     const activeTestimonials = document.querySelectorAll(
       `.for-button-${index}`
     );
     activeTestimonials.forEach(testimonial => {
-      testimonial.classList.add('testimonial__current');
+      testimonial.classList.add('testimonial--current');
     });
     if (activeTestimonials.length === 1) {
       activeTestimonials.item(0).style.width = '100%';

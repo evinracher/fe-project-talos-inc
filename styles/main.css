@@ -9,14 +9,23 @@
 
 * {
     box-sizing: border-box;
-    font-family: "et-line", "Oxygen", sans-serif;
+}
+
+:root {
     --my-grey: #f9f9f9;
     --my-dark-grey: #ececec;
-    --my-green: rgb(140, 201, 187);
+    --my-green: #8cc9bb;
     --font-main-color: #4f4f4f;
     --font-secundary-color: #858585;
     --font-title-color: #323232;
+}
+
+html {
     scroll-behavior: smooth;
+}
+
+html, textarea, input, button {
+    font-family: "Oxygen", sans-serif;
 }
 
 body {
@@ -38,11 +47,7 @@ h3 {
 
 .icon {
     font-size: 1.5rem;
-}
-
-.icon-rounded {
-    background-color: black;
-    border-radius: 50%;
+    font-family: "et-line";
 }
 
 .icon-behance {
@@ -58,7 +63,7 @@ header {
     top: 0;
     background-color: white;
     box-shadow: 0 1px 5px rgb(240, 240, 240);
-    z-index: 50;
+    z-index: 10;
 }
 
 .main-header {
@@ -104,7 +109,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--font-secundary-color);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.6rem;
 }
 
@@ -156,7 +161,7 @@ section:nth-child(2n) {
     margin-top: 0;
 }
 
-#home {
+.home-section {
     position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -194,7 +199,7 @@ section:nth-child(2n) {
 
 .home__text {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--my-grey);
     font-size: 0.875rem;
     margin: 0;
@@ -213,7 +218,7 @@ section:nth-child(2n) {
     border: 2px solid white;
     border-radius: 2px;
     font-size: 0.7rem;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -254,7 +259,7 @@ section:nth-child(2n) {
     margin-top: 14px;
 }
 
-.services__descriptor--icon {
+.services__icon-descriptor {
     justify-self: center;
 }
 
@@ -308,7 +313,7 @@ section:nth-child(2n) {
 }
 
 .team-member__role {
-    font-weight: bold;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -331,7 +336,7 @@ section:nth-child(2n) {
     height: auto;
 }
 
-.portafolio__image--info {
+.portafolio__info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,7 +352,7 @@ section:nth-child(2n) {
     transition: visibility 0s, opacity 1s ease-out;
 }
 
-.portafolio__image--info h3, .portafolio__image--info p {
+.portafolio__info h3, .portafolio__info p {
     color: white;
 }
 
@@ -359,16 +364,16 @@ section:nth-child(2n) {
     border-radius: 50%;
 }
 
-#blog {
+.blog-section {
     padding-left: 0;
     padding-right: 0;
 }
 
-#blog>div {
+.blog__section {
     padding: 52px 10px 60px;
 }
 
-#blog>div:nth-child(2n) {
+.blog__section:nth-child(2n) {
     background-color: var(--my-grey);
 }
 
@@ -396,19 +401,19 @@ section:nth-child(2n) {
     color: var(--my-green);
 }
 
-.our-blog__entry p:nth-child(1) {
+.our-blog__entry-text:nth-child(1) {
     color: var(--font-secundary-color);
     margin-bottom: 0;
 }
 
-.our-blog__entry h3 {
+.our-blog__entry-title {
     color: inherit;
     margin-bottom: 0;
 }
 
-.our-blog__entry p {
+.our-blog__entry-text {
     margin-top: 6px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .questions {
@@ -453,7 +458,7 @@ section:nth-child(2n) {
     transition: visibility 0s, opacity 1s;
 }
 
-.testimonial__current {
+.testimonial--current {
     position: static;
     visibility: visible;
     opacity: 1;
@@ -477,7 +482,7 @@ section:nth-child(2n) {
     text-align: center;
 }
 
-.contact__form {
+.contact-form {
     text-align: center;
     width: 90%;
     margin: auto;
@@ -485,20 +490,20 @@ section:nth-child(2n) {
     gap: 15px 26px;
 }
 
-.contact__form--input {
+.contact-form__input {
     padding: 8px;
     font-size: 0.65rem;
     background-color: var(--my-grey);
 }
 
-.contact__form--input, .contact__form--button {
+.contact-form__input, .contact-form__button {
     width: 100%;
     height: 34px;
     border: 1px solid var(--my-dark-grey);
     border-radius: 2px;
 }
 
-.contact__form textarea {
+.contact-form__text-area {
     max-width: 270px;
     min-width: 100%;
     height: 128px;
@@ -506,18 +511,18 @@ section:nth-child(2n) {
     max-height: 200px;
 }
 
-.contact__form--button {
+.contact-form__button {
     color: white;
     font-size: 0.65rem;
     text-transform: uppercase;
     border-color: transparent;
     border-radius: 2px;
     background-color: var(--my-green);
-    font-weight: bold;
+    font-weight: 700;
     transition: background-color 1s;
 }
 
-.contact__form--button:hover, .contact__form--button:active {
+.contact-form__button:hover, .contact-form__button:active {
     background-color: white;
     color: var(--my-green);
 }
@@ -566,10 +571,10 @@ footer {
         line-height: 58px;
         text-align: center;
     }
-    section, #blog>div {
+    section, .blog__section {
         padding: 83px 94px 90px;
     }
-    #home {
+    .home-section {
         height: 50vh;
         align-items: center;
         align-content: space-around;
@@ -630,24 +635,24 @@ footer {
     .rounded-button-mobile {
         display: none;
     }
-    .contact__form {
+    .contact-form {
         max-width: 725px;
         width: 100%;
         margin: auto;
         grid-template-columns: 48% 48%;
         grid-template-areas: ". message-area" ". message-area" ". message-area" "button-area button-area";
     }
-    .contact__form--button {
+    .contact-form__button {
         margin-top: 15px;
     }
-    #message {
+    .contact-form__text-area {
         height: 100%;
         grid-area: message-area;
     }
     .question {
         width: 80%;
     }
-    .contact__form--button {
+    .contact-form__button {
         width: 60%;
         grid-area: button-area;
         justify-self: center;
@@ -672,7 +677,7 @@ footer {
     .icon {
         font-size: 2rem;
     }
-    section, #blog>div {
+    section, .blog__section {
         padding: 122px 10% 130px;
     }
     .header__title {
@@ -694,13 +699,13 @@ footer {
         font-size: 0.8rem;
         line-height: 77px;
     }
-    #home {
+    .home-section {
         height: 90vh;
         padding-left: 20%;
         padding-right: 20%;
     }
     .home__title {
-        font-weight: bold;
+        font-weight: 700;
         font-size: 2.2rem;
     }
     .home__text {
@@ -728,15 +733,19 @@ footer {
     .our-blog__entries div {
         width: 48%;
     }
-    .contact__form--input {
+    .contact-form__input {
         padding: 13px;
         font-size: 0.8rem;
         background-color: var(--my-grey);
     }
-    .contact__form--input, .contact__form--button {
+    .contact-form__input, .contact-form__button {
         height: 43px;
     }
-    .contact__form--button {
+    .contact-form__text-area {
+        height: 100%;
+        grid-area: message-area;
+    }
+    .contact-form__button {
         font-size: 0.9rem;
     }
     .social-media-link {
