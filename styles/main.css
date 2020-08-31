@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @font-face {
     font-family: 'et-line';
-    src: url('../resources/et-line-font/fonts/et-line.eot');
-    src: url('../resources/et-line-font/fonts/et-line.eot?#iefix') format('embedded-opentype'), url('../resources/et-line-font/fonts/et-line.woff') format('woff'), url('../resources/et-line-font/fonts/et-line.ttf') format('truetype'), url('../resources/et-line-font/fonts/et-line.svg#et-line') format('svg');
+    src: url('/resources/et-line-font/fonts/et-line.eot');
+    src: url('/resources/et-line-font/fonts/et-line.eot?#iefix') format('embedded-opentype'), url('/resources/et-line-font/fonts/et-line.woff') format('woff'), url('/resources/et-line-font/fonts/et-line.ttf') format('truetype'), url('/resources/et-line-font/fonts/et-line.svg#et-line') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -167,21 +167,21 @@ section:nth-child(2n) {
     flex-direction: column;
     align-items: center;
     animation: linear change-image 5s infinite alternate forwards;
-    background: url("../resources/home-bg-2.jpg");
+    background: url("/resources/home-bg-2.jpg");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
 @keyframes change-image {
-    0, 40% {
-        background: url("../resources/home-bg-2.jpg");
+    0%, 40% {
+        background: url("/resources/home-bg-2.jpg");
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
     60%, 100% {
-        background: url("../resources/home-bg.jpg");
+        background: url("/resources/home-bg.jpg");
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -381,7 +381,7 @@ section:nth-child(2n) {
     border: 1px solid var(--my-dark-grey);
     border-radius: 4px;
     padding: 30px 47px;
-    background: url('../resources/hover-image.jpg');
+    background: url('/resources/hover-image.jpg');
     background-size: cover;
     background-position: 50%0;
     background-image: none;
@@ -390,7 +390,7 @@ section:nth-child(2n) {
 }
 
 .our-blog__entry:hover {
-    background: url('../resources/hover-image.jpg');
+    background: url('/resources/hover-image.jpg');
     background-size: cover;
     background-position: 50% 10%;
     color: var(--my-green);
