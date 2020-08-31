@@ -17,6 +17,10 @@
     .rounded-button-mobile {
         display: none;
     }
+    .rounded-button {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .rounded-button--active {

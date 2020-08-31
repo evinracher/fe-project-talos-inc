@@ -47,7 +47,6 @@ export function getTotalOfButtonsAndRemoveActiveClass(buttons) {
 }
 
 export function loadTestimonials(elements) {
-  const activeButton = document.querySelector('.rounded-button--active');
   const buttonsCount = getTotalOfButtonsAndRemoveActiveClass(
     elements.testimonialButtons
   );
@@ -56,7 +55,6 @@ export function loadTestimonials(elements) {
   const activeTestimonialIndex = Array.from(elements.testimonials).indexOf(
     activeTestimonial
   );
-  console.log({ activeTestimonialIndex });
   if (buttonsCount === testimonialsCount) {
     elements.testimonials.forEach(testimonial => {
       testimonial.classList.remove('testimonial__current');
@@ -66,11 +64,9 @@ export function loadTestimonials(elements) {
     );
     activeRealButton.classList.add('rounded-button--active');
     activeTestimonial.classList.add('testimonial__current');
-    console.log(activeRealButton);
   } else if (buttonsCount === 3) {
     const id = activeTestimonial.classList.item(1);
     const index = parseInt(id.charAt(id.length - 1));
-    console.log(index);
     const activeTestimonials = document.querySelectorAll(
       `.for-button-${index}`
     );
@@ -82,6 +78,5 @@ export function loadTestimonials(elements) {
     }
     const activeRealButton = document.getElementById(`rounded-button-${index}`);
     activeRealButton.classList.add('rounded-button--active');
-    console.log(activeRealButton);
   }
 }

@@ -78,3 +78,29 @@ export function handleTestimonialButtonClick(e) {
     }
   }
 }
+
+export function sectionInterceptionCallback(entries) {
+  let maxRatio = 0;
+  let maxEntry;
+  let needChange = false;
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      needChange = true;
+      if (entry.intersectionRatio > maxRatio) {
+        maxRatio = entry.intersectionRatio;
+        maxEntry = entry;
+      }
+    }
+  });
+
+  if (needChange) {
+    const url = `#${maxEntry.target.dataset.section_id}`;
+    elements.navLinks.forEach(link => {
+      if (link.href.includes(url)) {
+        link.classList.add('nav__link--active');
+      } else {
+        link.classList.remove('nav__link--active');
+      }
+    });
+  }
+}

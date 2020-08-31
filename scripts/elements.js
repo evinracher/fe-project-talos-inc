@@ -10,3 +10,5 @@ export const testimonialButtons = document.querySelectorAll(
   '.testimonials__buttons span'
 );
 export const testimonials = document.querySelectorAll('.testimonial');
+export const sectionHeaders = document.querySelectorAll('[data-section_id]');
+export const navLinks = document.querySelectorAll('.nav__link');

@@ -113,7 +113,7 @@ header {
     font-size: 0.6rem;
 }
 
-.nav__link:hover, .nav__link:active {
+.nav__link:hover, .nav__link:active, .nav__link--active {
     color: var(--my-green);
 }
 
@@ -239,6 +239,7 @@ section:nth-child(2n) {
 
 .services__summary {
     padding-bottom: 50px;
+    text-align: left;
 }
 
 .services__summary p {

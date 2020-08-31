@@ -45,3 +45,14 @@ window.addEventListener('resize', () => {
 window.addEventListener('load', () => {
   loadTestimonials(elements);
 });
+
+const sectionsObserver = new IntersectionObserver(
+  handlers.sectionInterceptionCallback,
+  {
+    threshold: 1,
+  }
+);
+
+elements.sectionHeaders.forEach(sectionTarget => {
+  sectionsObserver.observe(sectionTarget);
+});
