@@ -16,6 +16,7 @@
     --font-main-color: #4f4f4f;
     --font-secundary-color: #858585;
     --font-title-color: #323232;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -111,7 +112,9 @@ header {
     font-size: 0.6rem;
 }
 
-.nav__link:hover, .nav__link:active, .nav__link--active {
+.nav__link:hover,
+.nav__link:active,
+.nav__link--active {
     color: var(--my-green);
 }
 
@@ -176,13 +179,15 @@ section:nth-child(2n) {
 }
 
 @keyframes change-image {
-    0%, 40% {
+    0%,
+    40% {
         background: url("../resources/home-bg-2.jpg");
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
-    60%, 100% {
+    60%,
+    100% {
         background: url("../resources/home-bg.jpg");
         background-size: cover;
         background-position: 50% 50%;
@@ -220,12 +225,17 @@ section:nth-child(2n) {
     text-decoration: none;
 }
 
-.home__learn-more-btn, .home__btn:visited {
+.home__learn-more-btn:visited {
+    border: 2px solid rgb(228, 164, 67);
+}
+
+.home__contact-btn:visited {
     background-color: rgb(228, 164, 67);
     border-color: rgb(228, 164, 67);
 }
 
-.home__btn:hover, .home__btn:active {
+.home__btn:hover,
+.home__btn:active {
     background-color: white;
     border-color: white;
     color: var(--my-green);
@@ -341,7 +351,8 @@ section:nth-child(2n) {
     transition: visibility 0s, opacity 1s ease-out;
 }
 
-.portafolio__image--info h3, .portafolio__image--info p {
+.portafolio__image--info h3,
+.portafolio__image--info p {
     color: white;
 }
 
@@ -485,7 +496,8 @@ section:nth-child(2n) {
     background-color: var(--my-grey);
 }
 
-.contact__form--input, .contact__form--button {
+.contact__form--input,
+.contact__form--button {
     width: 100%;
     height: 34px;
     border: 1px solid var(--my-dark-grey);
@@ -511,7 +523,8 @@ section:nth-child(2n) {
     transition: background-color 1s;
 }
 
-.contact__form--button:hover, .contact__form--button:active {
+.contact__form--button:hover,
+.contact__form--button:active {
     background-color: white;
     color: var(--my-green);
 }
@@ -528,6 +541,7 @@ footer {
     font-size: 1.4rem;
     margin: 0px 3px;
 }
+
 
 /* TABLET STYLE */
 
@@ -560,7 +574,8 @@ footer {
         line-height: 58px;
         text-align: center;
     }
-    section, #blog>div {
+    section,
+    #blog>div {
         padding: 83px 94px 90px;
     }
     #home {
@@ -599,13 +614,16 @@ footer {
         height: 252px;
         text-align: center;
     }
-    .team__members, .portafolio__images, .our-blog__entries {
+    .team__members,
+    .portafolio__images,
+    .our-blog__entries {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .team__member, .portafolio__image {
+    .team__member,
+    .portafolio__image {
         width: 48%;
     }
     .our-blog__entries div {
@@ -651,9 +669,10 @@ footer {
     }
 }
 
+
 /* DESKTOP STYLE */
 
-@media(min-width: 767px) {
+@media(min-width: 769px) {
     h1 {
         font-size: 2.2rem;
     }
@@ -672,7 +691,8 @@ footer {
     .section__info h1 {
         font-size: 2.2rem;
     }
-    section, #blog>div {
+    section,
+    #blog>div {
         padding: 122px 10% 130px;
     }
     .header__title {
@@ -716,7 +736,8 @@ footer {
         display: flex;
         gap: 20px;
     }
-    .team__member, .portafolio__image {
+    .team__member,
+    .portafolio__image {
         width: 31.5%;
     }
     .portafolio__image--icon {
@@ -730,7 +751,8 @@ footer {
         font-size: 0.8rem;
         background-color: var(--my-grey);
     }
-    .contact__form--input, .contact__form--button {
+    .contact__form--input,
+    .contact__form--button {
         height: 43px;
     }
     .contact__form--button {
