@@ -32,6 +32,7 @@ export function loadQuestions(elements) {
       otherQuestion.style.maxHeight = `${otherQuestionHeight}px`;
     }
   });
+  window.removeEventListener('load', loadQuestions);
 }
 
 export function getTotalOfButtonsAndRemoveActiveClass(buttons) {
@@ -79,4 +80,5 @@ export function loadTestimonials(elements) {
     const activeRealButton = document.getElementById(`rounded-button-${index}`);
     activeRealButton.classList.add('rounded-button--active');
   }
+  window.removeEventListener('load', loadTestimonials);
 }
