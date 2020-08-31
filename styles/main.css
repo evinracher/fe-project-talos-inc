@@ -31,10 +31,6 @@ p {
     color: var(--font-main-color);
 }
 
-h1 {
-    color: var(--font-title-color);
-}
-
 h3 {
     color: var(--font-title-color);
     font-size: 1rem;
@@ -152,7 +148,8 @@ section:nth-child(2n) {
     margin-bottom: 40px;
 }
 
-.section__info h1 {
+.section__title {
+    color: var(--font-title-color);
     font-size: 1.65rem;
     margin-bottom: 10px;
 }
@@ -673,9 +670,6 @@ footer {
 /* DESKTOP STYLE */
 
 @media(min-width: 769px) {
-    h1 {
-        font-size: 2.2rem;
-    }
     h3 {
         font-size: 1.4rem;
     }
@@ -688,15 +682,16 @@ footer {
     .icon {
         font-size: 2rem;
     }
-    .section__info h1 {
-        font-size: 2.2rem;
-    }
     section,
     #blog>div {
         padding: 122px 10% 130px;
     }
     .header__title {
         font-size: 1.6rem;
+    }
+    .section__title,
+    .home__title {
+        font-size: 2.2rem;
     }
     .main-nav {
         max-width: 620px;
