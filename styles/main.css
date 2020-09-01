@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @font-face {
     font-family: 'et-line';
-    src: url('/resources/et-line-font/fonts/et-line.eot');
-    src: url('/resources/et-line-font/fonts/et-line.eot?#iefix') format('embedded-opentype'), url('/resources/et-line-font/fonts/et-line.woff') format('woff'), url('/resources/et-line-font/fonts/et-line.ttf') format('truetype'), url('/resources/et-line-font/fonts/et-line.svg#et-line') format('svg');
+    src: url('/resources/fonts/et-line-font/et-line.eot');
+    src: url('/resources/fonts/et-line-font/et-line.eot?#iefix') format('embedded-opentype'), url('/resources/fonts/et-line-font/et-line.woff') format('woff'), url('/resources/fonts/et-line-font/et-line.ttf') format('truetype'), url('/resources/fonts/et-line-font/et-line.svg#et-line') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -77,6 +77,8 @@ header {
     color: var(--font-main-color);
     margin: 5px 0;
     font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .toggle-button {
