@@ -1,13 +1,15 @@
 // Selecting elements
 export const mobileBtn = document.querySelector('.mobile-button');
 export const mobileNav = document.querySelector('.mobile-nav');
+export const videoDisplayer = document.querySelector('.about__video-displayer');
+// console.log(videoDisplayer);
 export const teamMembers = document.querySelectorAll('.team-member');
 export const portafolioImages = document.querySelectorAll('.portafolio__image');
 export const questions = document.querySelectorAll('.question');
 export const questionsAnswers = document.querySelectorAll('.question__answer');
 export const questionSection = document.querySelector('.questions');
 export const testimonialButtons = document.querySelectorAll(
-    '.testimonials__buttons span'
+  '.testimonials__buttons span'
 );
 export const testimonials = document.querySelectorAll('.testimonial');
 export const sectionHeaders = document.querySelectorAll('[data-section_id]');

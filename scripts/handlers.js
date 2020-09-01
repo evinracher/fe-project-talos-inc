@@ -3,6 +3,8 @@ import {
   getQuestionHeight,
   getTotalHeight,
   getTotalOfButtonsAndRemoveActiveClass,
+  loadQuestions,
+  loadTestimonials,
 } from './utils.js';
 
 export function handleMobileBtnClick() {
@@ -104,4 +106,14 @@ export function sectionInterceptionCallback(entries) {
       }
     });
   }
+}
+
+export function handleWindowsLoad() {
+  loadQuestions(elements);
+  loadTestimonials(elements);
+  // console.log(window);
+  // elements.videoDisplayer.scr = window.URL.createObjectURL(
+  //   'blob:https://www.youtube.com/99e36be8-89a3-4c4c-8fca-2ec0617ba3f3'
+  // );
+  window.removeEventListener('load', handleWindowsLoad);
 }
