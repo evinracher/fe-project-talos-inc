@@ -70,7 +70,7 @@ export function handleTestimonialButtonClick(event) {
     activeTestimonial.classList.add('testimonial--current');
   } else if (buttonsCount === 3) {
     const activeTestimonials = document.querySelectorAll(
-      `.for-button-${index}`
+      `.slide-button-${index}`
     );
     activeTestimonials.forEach(testimonial => {
       testimonial.classList.add('testimonial--current');
