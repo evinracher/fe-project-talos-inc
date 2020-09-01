@@ -2,7 +2,6 @@
 export const mobileBtn = document.querySelector('.mobile-button');
 export const mobileNav = document.querySelector('.mobile-nav');
 export const videoDisplayer = document.querySelector('.about__video-displayer');
-// console.log(videoDisplayer);
 export const teamMembers = document.querySelectorAll('.team-member');
 export const portafolioImages = document.querySelectorAll('.portafolio__image');
 export const questions = document.querySelectorAll('.question');

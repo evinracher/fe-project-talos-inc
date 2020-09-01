@@ -12,7 +12,6 @@ export function handleMobileBtnClick() {
 }
 
 export function handleTeamMemberEnter(event) {
-  console.log(event.currentTarget);
   const links = event.currentTarget.querySelector('.team-member__links');
   links.classList.add('active-element');
 }
@@ -111,9 +110,5 @@ export function sectionInterceptionCallback(entries) {
 export function handleWindowsLoad() {
   loadQuestions(elements);
   loadTestimonials(elements);
-  // console.log(window);
-  // elements.videoDisplayer.scr = window.URL.createObjectURL(
-  //   'blob:https://www.youtube.com/99e36be8-89a3-4c4c-8fca-2ec0617ba3f3'
-  // );
   window.removeEventListener('load', handleWindowsLoad);
 }
