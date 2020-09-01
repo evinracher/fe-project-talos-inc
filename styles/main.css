@@ -9,13 +9,13 @@
     --my-black: #000000;
     --my-grey: #f9f9f9;
     --my-dark-grey: #ececec;
+    --my-orange: #e4a443;
     --my-green: #8cc9bb;
     --my-transparent-green: #7cc3afcc;
     --font-main-color: #4f4f4f;
     --font-secundary-color: #858585;
     --font-title-color: #323232;
     --box-shadow-color: #f0f0f0;
-    --my-orange: #e4a443;
 }
 
 html {
