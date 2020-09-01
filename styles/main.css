@@ -722,7 +722,7 @@ footer {
         font-size: 0.9rem;
         padding: 13px 38px;
     }
-    #about {
+    .about-section {
         display: flex;
         gap: 20px;
     }
