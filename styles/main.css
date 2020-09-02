@@ -238,11 +238,6 @@ section:nth-child(2n) {
   text-align: left;
 }
 
-.services__summary p {
-  margin-bottom: 0;
-  color: var(--font-main-color);
-}
-
 .services__descriptor {
   display: flex;
   gap: 1.2rem;
@@ -338,7 +333,7 @@ section:nth-child(2n) {
   transition: visibility 0s, opacity 1s ease-out;
 }
 
-.portafolio__info h3, .portafolio__info p {
+.portafolio__title, .portafolio__text {
   color: var(--my-white);
 }
 
@@ -416,7 +411,7 @@ section:nth-child(2n) {
   margin-right: 0.9rem;
 }
 
-.question h3 {
+.question__title {
   margin: 0;
 }
 
