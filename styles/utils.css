@@ -1,112 +1,95 @@
 /* own utilities */
 
 .rounded-buttons {
-    display: inline-block;
+  display: inline-block;
 }
 
 .rounded-button {
-    background: rgb(187, 225, 215);
-    width: 9px;
-    height: 9px;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 4px;
+  background: rgb(187, 225, 215);
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
 }
 
 @media (min-width: 577px) {
-    .rounded-button-mobile {
-        display: none;
-    }
-    .rounded-button {
-        width: 15px;
-        height: 15px;
-    }
+  .rounded-button-mobile {
+    display: none;
+  }
+  .rounded-button {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .rounded-button--active {
-    background: rgb(124, 195, 175);
+  background: rgb(124, 195, 175);
 }
 
 .close {
-    display: none;
+  display: none;
 }
 
 .active-element {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* etline icons */
 
 .icon:before {
-    font-family: 'et-line';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
+  font-family: 'et-line';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
 }
 
 /* social media icons */
 
-@font-face {
-    font-family: 'icomoon';
-    src: url('/resources/fonts/extra-icons-font/icomoon.eot?glned1');
-    src: url('/resources/fonts/extra-icons-font/icomoon.eot?glned1#iefix') format('embedded-opentype'), url('/resources/fonts/extra-icons-font/icomoon.ttf?glned1') format('truetype'), url('/resources/fonts/extra-icons-font/icomoon.woff?glned1') format('woff'), url('/resources/fonts/extra-icons-font/icomoon.svg?glned1#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-@font-face {
-    font-family: 'et-line';
-    src: url('/resources/fonts/et-line-font/et-line.eot');
-    src: url('/resources/fonts/et-line-font/et-line.eot?#iefix') format('embedded-opentype'), url('/resources/fonts/et-line-font/et-line.woff') format('woff'), url('/resources/fonts/et-line-font/et-line.ttf') format('truetype'), url('/resources/fonts/et-line-font/et-line.svg#et-line') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .social-media-icon, .icon-link {
-    font-family: 'icomoon';
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: 'icomoon';
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-link:before {
-    content: "\e904";
+  content: "\e904";
 }
 
 .icon-behance:before {
-    content: "\e900";
+  content: "\e900";
 }
 
 .icon-dribbble-with-circle:before {
-    content: "\e901";
+  content: "\e901";
 }
 
 .icon-facebook-with-circle:before {
-    content: "\e902";
+  content: "\e902";
 }
 
 .icon-twitter-with-circle:before {
-    content: "\e903";
+  content: "\e903";
 }
 
 .icon-google-plus3:before {
-    content: "\ea8d";
+  content: "\ea8d";
 }
 
 .icon-github:before {
-    content: "\eab0";
+  content: "\eab0";
 }
