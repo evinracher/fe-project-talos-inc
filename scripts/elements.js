@@ -4,6 +4,7 @@ export const mobileNav = document.querySelector('.mobile-nav');
 export const teamMembers = document.querySelectorAll('.team-member');
 export const portafolioImages = document.querySelectorAll('.portafolio__image');
 export const questions = document.querySelectorAll('.question');
+export const questionsArray = Array.from(questions);
 export const questionsAnswers = document.querySelectorAll('.question__answer');
 export const questionSection = document.querySelector('.questions');
 export const testimonialButtons = document.querySelectorAll(

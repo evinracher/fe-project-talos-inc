@@ -31,17 +31,17 @@ export function handlePortafolioImageOut(event) {
 export function handleQuestionClick(event) {
   const clickedQuestion = event.currentTarget;
   const clickedAnswer = clickedQuestion.querySelector('.question__answer');
+  const index = elements.questionsArray.indexOf(clickedQuestion);
   if (clickedAnswer.classList.contains('open-answer')) {
     return;
   }
-  elements.questions.forEach(otherQuestion => {
-    if (otherQuestion !== clickedQuestion) {
+  clickedQuestion.classList.add('open-question');
+  clickedAnswer.classList.add('open-answer');
+  elements.questions.forEach((otherQuestion, i) => {
+    if (i !== index) {
       const otherAnswer = otherQuestion.querySelector('.question__answer');
       otherQuestion.classList.remove('open-question');
       otherAnswer.classList.remove('open-answer');
-    } else {
-      clickedQuestion.classList.add('open-question');
-      clickedAnswer.classList.add('open-answer');
     }
   });
 }
