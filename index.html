@@ -92,43 +92,51 @@
     <div class="services__descriptors">
       <div class="services__descriptor">
         <div class="services__icon-descriptor icon" aria-hidden="true" data-icon="&#xe001;"></div>
-        <h3 class="services__title">
-          Brand Identity
-        </h3>
-        <p class="services__text">
-          Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-          vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
-        </p>
+        <div class="services__info">
+          <h3 class="services__title">
+            Brand Identity
+          </h3>
+          <p class="services__text">
+            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+            vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+          </p>
+        </div>
       </div>
       <div class="services__descriptor">
         <div class="services__icon-descriptor icon" aria-hidden="true" data-icon="&#xe01b;"></div>
-        <h3 class="services__title">
-          Web Design
-        </h3>
-        <p class="services__text">
-          Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-          vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
-        </p>
+        <div class="services__info">
+          <h3 class="services__title">
+            Web Design
+          </h3>
+          <p class="services__text">
+            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+            vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+          </p>
+        </div>
       </div>
       <div class="services__descriptor">
         <div class="services__icon-descriptor icon" aria-hidden="true" data-icon="&#xe04b;"></div>
-        <h3 class="services__title">
-          Social Marketing
-        </h3>
-        <p class="services__text">
-          Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-          vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
-        </p>
+        <div class="services__info">
+          <h3 class="services__title">
+            Social Marketing
+          </h3>
+          <p class="services__text">
+            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+            vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+          </p>
+        </div>
       </div>
       <div class="services__descriptor">
         <div class="services__icon-descriptor icon" aria-hidden="true" data-icon="&#xe027;"></div>
-        <h3 class="services__title">
-          CMS &amp; eCommerce
-        </h3>
-        <p class="services__text">
-          Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
-          vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
-        </p>
+        <div class="services__info">
+          <h3 class="services__title">
+            CMS &amp; eCommerce
+          </h3>
+          <p class="services__text">
+            Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue
+            vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -151,7 +159,7 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
-  <section id="team">
+  <section class="team-section" id="team">
     <div class="section__info">
       <h2 class="section__title" data-section_id="team">team member</h2>
       <p class="section__text">
@@ -479,11 +487,15 @@
       </p>
     </div>
     <form action="index.html" class="contact-form">
-      <input class="contact-form__input" type="text" id="name" required placeholder="Name">
-      <input class="contact-form__input" type="email" id="email" required placeholder="Email">
-      <input class="contact-form__input" type="number" id="phone-number" required placeholder="Phone">
-      <textarea class="contact-form__input contact-form__text-area" type="text-area" id="message" required
-        placeholder="Message"></textarea>
+      <div class="contact-form__container">
+        <div class="contact-form__inputs">
+          <input class="contact-form__input" type="text" id="name" required placeholder="Name">
+          <input class="contact-form__input" type="email" id="email" required placeholder="Email">
+          <input class="contact-form__input" type="number" id="phone-number" required placeholder="Phone">
+        </div>
+        <textarea class="contact-form__input contact-form__text-area" type="text-area" id="message" required
+          placeholder="Message"></textarea>
+      </div>
       <button class="contact-form__button" type="submit">Shoot Message</button>
     </form>
   </section>
