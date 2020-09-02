@@ -1,16 +1,12 @@
 /* own utilities */
 
-.rounded-buttons {
-  display: inline-block;
+.close {
+  display: none;
 }
 
-.rounded-button {
-  background: rgb(187, 225, 215);
-  width: 9px;
-  height: 9px;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0 4px;
+.active-element {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (min-width: 577px) {
@@ -21,19 +17,6 @@
     width: 15px;
     height: 15px;
   }
-}
-
-.rounded-button--active {
-  background: rgb(124, 195, 175);
-}
-
-.close {
-  display: none;
-}
-
-.active-element {
-  visibility: visible;
-  opacity: 1;
 }
 
 /* etline icons */

@@ -11,6 +11,7 @@
   --my-dark-grey: #ececec;
   --my-orange: #e4a443;
   --my-green: #8cc9bb;
+  --my-light-green: #bbe1d7;
   --my-transparent-green: #7cc3afcc;
   --font-main-color: #4f4f4f;
   --font-secundary-color: #858585;
@@ -461,6 +462,23 @@ section:nth-child(2n) {
 .testimonials__buttons {
   margin-top: 0.9rem;
   text-align: center;
+}
+
+.rounded-buttons {
+  display: inline-block;
+}
+
+.rounded-button {
+  background: var(--my-light-green);
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.rounded-button--active {
+  background: var(--my-green);
 }
 
 .contact-form {
