@@ -1,0 +1,78 @@
+/* own utilities */
+
+.close {
+  display: none;
+}
+
+.active-element {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 577px) {
+  .rounded-button-mobile {
+    display: none;
+  }
+  .rounded-button {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* etline icons */
+
+.icon:before {
+  font-family: 'et-line';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+}
+
+/* social media icons */
+
+.social-media-icon, .icon-link {
+  font-family: 'icomoon';
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-link:before {
+  content: "\e904";
+}
+
+.icon-behance:before {
+  content: "\e900";
+}
+
+.icon-dribbble-with-circle:before {
+  content: "\e901";
+}
+
+.icon-facebook-with-circle:before {
+  content: "\e902";
+}
+
+.icon-twitter-with-circle:before {
+  content: "\e903";
+}
+
+.icon-google-plus3:before {
+  content: "\ea8d";
+}
+
+.icon-github:before {
+  content: "\eab0";
+}

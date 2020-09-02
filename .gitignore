@@ -1,0 +1,8 @@
+package.json
+package-lock.json
+node_modules
+.eslintrc
+.DS_Store
+resources/.DS_Store
+dist
+.cache
