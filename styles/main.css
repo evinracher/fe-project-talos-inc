@@ -132,7 +132,7 @@ header {
   margin-bottom: 1.8rem;
 }
 
-.mobile-nav__item a {
+.mobile-nav__item .nav__link {
   display: block;
 }
 
@@ -206,7 +206,7 @@ section:nth-child(2n) {
   padding: 0.5rem 2rem;
   background-color: transparent;
   color: var(--my-white);
-  border: 2px solid var(--my-white);
+  border: 2px solid currentColor;
   border-radius: 2px;
   font-size: 0.7rem;
   font-weight: 700;
@@ -422,7 +422,7 @@ section:nth-child(2n) {
 
 .open-answer {
   overflow: scroll;
-  max-height: 12.5rem;
+  max-height: 13rem;
 }
 
 .testimonials {

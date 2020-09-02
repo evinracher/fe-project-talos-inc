@@ -32,7 +32,7 @@ export function loadTestimonials(elements) {
     const id = activeTestimonial.classList.item(1);
     const index = parseInt(id.charAt(id.length - 1));
     const activeTestimonials = document.querySelectorAll(
-      `.for-button-${index}`
+      `.slide-button-${index}`
     );
     activeTestimonials.forEach(testimonial => {
       testimonial.classList.add('testimonial--current');
