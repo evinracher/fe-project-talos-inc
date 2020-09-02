@@ -1,9 +1,6 @@
 import * as elements from './elements.js';
 import {
-  getQuestionHeight,
-  getTotalHeight,
   getTotalOfButtonsAndRemoveActiveClass,
-  loadQuestions,
   loadTestimonials,
 } from './utils.js';
 
@@ -34,22 +31,17 @@ export function handlePortafolioImageOut(event) {
 export function handleQuestionClick(event) {
   const clickedQuestion = event.currentTarget;
   const clickedAnswer = clickedQuestion.querySelector('.question__answer');
-  const clickedAnswerHeight = getTotalHeight(clickedAnswer);
   if (clickedAnswer.classList.contains('open-answer')) {
     return;
   }
-  clickedQuestion.classList.add('open-question');
-  clickedAnswer.classList.add('open-answer');
-  const questionHeight = getQuestionHeight(clickedQuestion, clickedAnswer);
-  clickedQuestion.style['max-height'] = `${questionHeight +
-    clickedAnswerHeight}px`;
   elements.questions.forEach(otherQuestion => {
     if (otherQuestion !== clickedQuestion) {
       const otherAnswer = otherQuestion.querySelector('.question__answer');
       otherQuestion.classList.remove('open-question');
       otherAnswer.classList.remove('open-answer');
-      const otherQuestionHeight = getQuestionHeight(otherQuestion);
-      otherQuestion.style.maxHeight = `${otherQuestionHeight}px`;
+    } else {
+      clickedQuestion.classList.add('open-question');
+      clickedAnswer.classList.add('open-answer');
     }
   });
 }
@@ -108,7 +100,6 @@ export function sectionInterceptionCallback(entries) {
 }
 
 export function handleWindowsLoad() {
-  loadQuestions(elements);
   loadTestimonials(elements);
   window.removeEventListener('load', handleWindowsLoad);
 }
