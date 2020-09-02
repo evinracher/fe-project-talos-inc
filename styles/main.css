@@ -403,8 +403,12 @@ section:nth-child(2n) {
   border-radius: 3px;
   box-shadow: 0 1px 5px var(--box-shadow-color);
   transition: max-height 0.5s ease-out;
-  overflow: hidden;
+  overflow: scroll;
   width: 100%;
+}
+
+.open-question {
+  max-height: 300px;
 }
 
 .question__title--icon {
@@ -417,6 +421,14 @@ section:nth-child(2n) {
 
 .question__answer {
   padding: 2px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s ease-out;
+}
+
+.open-answer {
+  visibility: visible;
+  opacity: 1;
 }
 
 .testimonials {
