@@ -173,15 +173,15 @@ section:nth-child(2n) {
   flex-direction: column;
   align-items: center;
   animation: linear change-image 5s infinite alternate forwards;
-  background: url("../resourcess/home-bg-2.jpg") 50% 50%/cover;
+  background: url("../resources/home-bg-2.jpg") 50% 50%/cover;
 }
 
 @keyframes change-image {
   0%, 40% {
-    background: url("../resourcess/home-bg-2.jpg") 50% 50%/cover;
+    background: url("../resources/home-bg-2.jpg") 50% 50%/cover;
   }
   60%, 100% {
-    background: url("../resourcess/home-bg.jpg") 50% 50%/cover;
+    background: url("../resources/home-bg.jpg") 50% 50%/cover;
   }
 }
 
@@ -373,7 +373,7 @@ section:nth-child(2n) {
 }
 
 .our-blog__entry:hover {
-  background: url('../resourcess/hover-image.jpg') 50% 10%/cover;
+  background: url('../resources/hover-image.jpg') 50% 10%/cover;
   color: var(--my-green);
 }
 
